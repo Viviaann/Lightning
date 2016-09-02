@@ -26,7 +26,7 @@ void draw()
 	image(doG,0,0,width,height);
 	//image(caT,550,230,width/2.5,height/2.5);
 	image(bugA,550,bugY,width/4,height/4);
-	//image(bugB,250,bugZ,width/4,height/4);
+	image(bugB,250,bugZ,width/4,height/4);
 	bugY = bugY+2;
 	if (bugY> 650){
 		bugY=0;
@@ -47,15 +47,15 @@ while(endX<900){
  startY=endY;
 
 }
-if (startX>=500 && startY<=550)
+if (endY>=550 && startY<=600)
 {
 	//image(blood, 550,bugY,width/4,height/4);
 	bugA = blood;
 };
-//if (startX>=500 && startX<=550)
+if (startY>=600 && endY<=650)
 {
-	//image(blood, 550,bugY,width/4,height/4);
-	//bugB = blood;
+	
+	bugB = blood;
 };
 
 };
